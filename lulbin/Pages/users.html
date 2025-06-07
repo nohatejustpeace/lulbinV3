@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Lulbin Users</title>
+  <style>
+    body {
+      background-color: #000;
+      color: #ddd;
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0; padding: 0;
+    }
+
+    header {
+      background-color: #111;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 24px;
+      border-bottom: 1px solid #222;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 24px;
+      color: white;
+    }
+
+    nav a {
+      color: #ccc;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      color: white;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 60px auto;
+      padding: 20px;
+    }
+
+    h2 {
+      color: #ff69b4;
+      margin-bottom: 20px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background-color: #111;
+      border-radius: 6px;
+      overflow: hidden;
+    }
+
+    th, td {
+      padding: 12px 15px;
+      text-align: left;
+      border-bottom: 1px solid #222;
+      color: #ccc;
+    }
+
+    th {
+      background-color: #222;
+      color: #eee;
+    }
+
+    tr:hover {
+      background-color: #222;
+    }
+
+    .role-founder {
+      color: #00ff00;
+      font-weight: bold;
+      position: relative;
+    }
+    /* Sparkle animation */
+    .role-founder::after {
+      content: "✨";
+      position: absolute;
+      top: 0;
+      right: -20px;
+      animation: sparkle 2s infinite;
+      font-size: 18px;
+    }
+
+    @keyframes sparkle {
+      0%, 100% { opacity: 1; transform: rotate(0deg); }
+      50% { opacity: 0.4; transform: rotate(20deg); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Lulbin</h1>
+    <nav>
+      <a href="/index.html">Home</a>
+      <a href="support.html">Add Paste</a>
+      <a href="users.html">Users</a>
+      <a href="upgrades.html">Upgrades</a>
+      <a href="support.html">Support</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h2>Users</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Username</th>
+          <th>Role</th>
+          <th>Joined</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="creator">dev-founder</td>
+          <td class="role-founder">Founder</td>
+          <td>June 1, 2025</td>
+        </tr>
+        <tr>
+          <td>user123</td>
+          <td>Member</td>
+          <td>June 3, 2025</td>
+        </tr>
+        <tr>
+          <td>anon789</td>
+          <td>Member</td>
+          <td>June 4, 2025</td>
+        </tr>
+        <!-- Add more users as needed -->
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>

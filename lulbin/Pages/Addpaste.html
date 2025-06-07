@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Add Paste - Lulbin</title>
+  <style>
+    body {
+      background-color: #000;
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      color: white;
+    }
+
+    header {
+      background-color: #111;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 24px;
+      border-bottom: 1px solid #222;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 24px;
+      color: white;
+    }
+
+    nav a {
+      color: #ccc;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      color: white;
+    }
+
+    .form-container {
+      max-width: 800px;
+      margin: 60px auto;
+      padding: 20px;
+      background-color: #111;
+      border: 1px solid #333;
+      border-radius: 8px;
+    }
+
+    .form-container input, .form-container textarea {
+      width: 100%;
+      margin-bottom: 16px;
+      padding: 10px;
+      background-color: #222;
+      color: white;
+      border: 1px solid #444;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+
+    .form-container button {
+      background-color: #6200ea;
+      color: white;
+      border: none;
+      padding: 10px 16px;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .form-container button:hover {
+      background-color: #4b00b5;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Lulbin</h1>
+    <nav>
+      <a href="/index.html">Home</a>
+      <a href="Addpaste.htmll">Add Paste</a>
+      <a href="users.html">Users</a>
+      <a href="upgrades.html">Upgrades</a>
+      <a href="support.html">Support</a>
+    </nav>
+  </header>
+
+  <div class="form-container">
+    <h2>Add a New Paste</h2>
+    <input type="text" placeholder="Title" />
+    <textarea rows="8" placeholder="Paste content..."></textarea>
+    <textarea rows="4" placeholder="Add a comment (optional)"></textarea>
+    <button>Post</button>
+  </div>
+</body>
+</html>
